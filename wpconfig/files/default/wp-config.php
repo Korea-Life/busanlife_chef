@@ -19,6 +19,10 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
+
+define('WP_HOME', 'BusanLife-1691598420.ap-northeast-2.elb.amazonaws.com');
+define('WP_SITEURL', 'BusanLife-1691598420.ap-northeast-2.elb.amazonaws.com');
+
 /** The name of the database for WordPress */
 define('DB_NAME', 'busanlife');
 
