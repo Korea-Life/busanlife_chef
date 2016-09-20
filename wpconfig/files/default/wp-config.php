@@ -1,42 +1,47 @@
 <?php
 /**
- * The base configurations of the WordPress.
+ * The base configuration for WordPress
  *
- * This file has the following configurations: MySQL settings, Table Prefix,
- * Secret Keys, and ABSPATH. You can find more information by visiting
- * {@link http://codex.wordpress.org/Editing_wp-config.php Editing wp-config.php}
- * Codex page. You can get the MySQL settings from your web host.
+ * The wp-config.php creation script uses this file during the
+ * installation. You don't have to use the web site, you can
+ * copy this file to "wp-config.php" and fill in the values.
  *
- * This file is used by the wp-config.php creation script during the
- * installation. You don't have to use the web site, you can just copy this file
- * to "wp-config.php" and fill in the values.
+ * This file contains the following configurations:
+ *
+ * * MySQL settings
+ * * Secret keys
+ * * Database table prefix
+ * * ABSPATH
+ *
+ * @link https://codex.wordpress.org/Editing_wp-config.php
  *
  * @package WordPress
  */
 
-define('WP_REDIS_HOST', '');
- 
-define('WP_HOME','');
-define('WP_SITEURL','');
-
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress');
+define('DB_NAME', 'busanlife');
 
 /** MySQL database username */
-define('DB_USER', 'wordpress');
+define('DB_USER', 'englishseed2');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'wordpress');
+define('DB_PASSWORD', 'englishseed2');
 
 /** MySQL hostname */
-define('DB_HOST', '');
+define('DB_HOST', 'englishseed2.czrngnw3nlel.ap-northeast-2.rds.amazonaws.com:3306');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+
+// added by KH
+define('DISABLE_WP_CRON', true);
+
+// added by KH
+define('DISALLOW_FILE_EDIT', true);
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -47,22 +52,22 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         '_m,q3dY9!Gzq]|A|RwD=b~(;#h08w>;-vQ? 7$0,[3WPzjo_r-nMsYK2C=G]IGj,');
+define('SECURE_AUTH_KEY',  '0kfa>KHUq(V#$c5k|NO@X04-/d/@%Ztf+_-LAirW&f`[`i_9JhqMhA|+-^opKohj');
+define('LOGGED_IN_KEY',    'PQ<uJo=-2[d*+nX:hAIBC+W=_#qu@EoY#P`9ud}Yx~<sq=qE1%7W/+O5QPAvX=Ja');
+define('NONCE_KEY',        '4zr}s-RG(mdy-#YnAw(.rBOuT{@q[,)R71qLCAFj >{|wkU|0hz:|~jPQM}Hb?Dq');
+    define('AUTH_SALT',        'h-HkO)6 ?zI9Q<{=n/+$ _*?eob5bp-=*1a|^#GoAB244H.U5D<i]Ng|EgL-@-VW');
+define('SECURE_AUTH_SALT', '?|i KZrALLHuv!LVe0G+1~FrF{MqaoFTdh.@/[&1oM!T+ yzH4%f= lbEwZ%gLQV');
+define('LOGGED_IN_SALT',   'Bb^(o7YN:{u$@e52@!_3jW0K]MQey|xy&tf>UHgGkA@sT5N)YpY 7XLV-U)ygFHH');
+define('NONCE_SALT',       'CZJe9a*/UbeJspkB2[H@xT((X-e5+#W,/BN(3Q3*T?TBT.q9{$Qxe^I.pfuxkbba');
 
 /**#@-*/
 
 /**
- * WordPress Database Table prefix.
+ * wordpress database table prefix.
  *
- * You can have multiple installations in one database if you give each a unique
- * prefix. Only numbers, letters, and underscores please!
+ * you can have multiple installations in one database if you give each
+ * a unique prefix. only numbers, letters, and underscores please!
  */
 $table_prefix  = 'wp_';
 
