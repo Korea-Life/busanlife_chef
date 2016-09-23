@@ -24,16 +24,17 @@ define('WP_HOME', 'http://www.busan-life.com');
 define('WP_SITEURL', 'http://www.busan-life.com');
 
 /** The name of the database for WordPress */
-define('DB_NAME', '');
+
+define('DB_NAME', 'busanlife');
 
 /** MySQL database username */
-define('DB_USER', '');
+define('DB_USER', 'englishseed2');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'englishseed2');
 
 /** MySQL hostname */
-define('DB_HOST', '');
+define('DB_HOST', 'englishseed2.czrngnw3nlel.ap-northeast-2.rds.amazonaws.com:3306');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
