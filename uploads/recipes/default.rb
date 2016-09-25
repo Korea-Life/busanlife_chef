@@ -1,6 +1,5 @@
-cookbook_file "/srv/www/busanlife/wp-content/current/uploads" do
-  source "uploads"
-  mode '0777'
+directory "/srv/www/busanlife/wp-content/current/uploads" do
+  mode '0744'
   action :create
   owner 'deploy'
   group 'www-data'
